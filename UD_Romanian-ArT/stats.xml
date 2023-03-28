@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>50</sentences><tokens>573</tokens><words>573</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>50</sentences><tokens>573</tokens><words>573</words><fused>0</fused></test>
+  </size>
+  <lemmas unique="224" /><!-- ., ,, să, nu, si, el, di, şi, un, fac, cum, hiu, iu, tini, tu -->
+  <forms unique="299" /><!-- ., ,, s-, nu, di, şi, cum, iu, tu, ş-, ?, că, cara, d-, era -->
+  <fusions unique="0" /><!--  -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="14">
+    <tag name="ADJ">9</tag><!-- mare, ahtare, albu, aleptu, bun, greu, sănătos, uscat -->
+    <tag name="ADP">41</tag><!-- di, tu, cu, la, pân, a, ca, câtră, de, după -->
+    <tag name="ADV">55</tag><!-- iu, cum, tora, tut, cama, dip, diznou, ţe, acasă, acolo -->
+    <tag name="AUX">9</tag><!-- hiu, voi, am -->
+    <tag name="CCONJ">17</tag><!-- şi, i, ma -->
+    <tag name="DET">15</tag><!-- un, a, aestu, alt, cât, multu, ndoi, su -->
+    <tag name="INTJ">2</tag><!-- am, mori -->
+    <tag name="NOUN">79</tag><!-- feată, casă, fiĉor, amiră, an, arap, gardu, lamńe, lucru, mer -->
+    <tag name="NUM">6</tag><!-- un, doi, trei, unsprăyinģiţĺi -->
+    <tag name="PART">50</tag><!-- să, nu, sâ -->
+    <tag name="PRON">71</tag><!-- si, el, tini, năs, mini, ţe, aestu, care, tine, vârnu -->
+    <tag name="PUNCT">89</tag><!-- ., ,, ?, ! -->
+    <tag name="SCONJ">15</tag><!-- că, cara, di, ca, cum, si -->
+    <tag name="VERB">115</tag><!-- fac, ascap, trec, aduc, aflu, minduescu, ved, voi, adar, adun -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="42">
+    <feat name="AdpType" value="Prep" upos="ADP">41</feat><!-- di, tu, d-, cu, la, ninga, pân, -n, N-, Până -->
+    <feat name="Case" value="Acc" upos="ADP,PRON">80</feat><!-- s-, di, tu, d-, ti, u, cu, la, mi, si -->
+    <feat name="Case" value="Acc,Nom" upos="ADJ,DET,NOUN,NUM,PRON">98</feat><!-- nă, un, casă, feata, fiĉorlu, nâsă, ună, ţi, aestu, cari -->
+    <feat name="Case" value="Dat" upos="PRON">9</feat><!-- -ĺi, le, lă, îi, ĺ-, ľ-, ţ, ț- -->
+    <feat name="Case" value="Dat,Gen" upos="NOUN">4</feat><!-- amirălui, cafiĝilui, calui, featăľei -->
+    <feat name="Case" value="Nom" upos="PRON">5</feat><!-- io, tine, mine -->
+    <feat name="Case" value="Voc" upos="NOUN">2</feat><!-- measă, vătămată -->
+    <feat name="Definite" value="Def" upos="ADJ,NOUN,NUM">45</feat><!-- feata, fiĉorlu, lamńa, ună, Araplu, Merlu, Uvreulu, aluatlu, amiroańa, amirălu -->
+    <feat name="Definite" value="Ind" upos="ADJ,NOUN">45</feat><!-- casă, ańi, gardu, oară, ќiro, Tată, albă, aleptu, apă, arap -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV">40</feat><!-- tora, dip, diznou, tut, Ahtare, Atumţea, Mâne, Noaptea, Totâna, Ună -->
+    <feat name="Gender" value="Fem" upos="ADJ,DET,NOUN,NUM,PRON,VERB">66</feat><!-- nă, u, casă, feata, ună, lamńa, nâsă, oară, -o, O -->
+    <feat name="Gender" value="Masc" upos="ADJ,DET,NOUN,NUM,PRON,VERB">66</feat><!-- un, fiĉorlu, aestu, ańi, gardu, lu, lucru, vârnu, ќiro, -l -->
+    <feat name="Mood" value="Cnd" upos="PART,VERB">6</feat><!-- s-, amintari, mărtari, pistipsiri -->
+    <feat name="Mood" value="Imp" upos="VERB">3</feat><!-- adu, bati, misură -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">83</feat><!-- era, ascăpă, avea, aştipta, feaţi, fudzirâ, imna, lucra, mutreaşte, tricu -->
+    <feat name="Mood" value="Sub" upos="AUX,PART,VERB">54</feat><!-- s-, să, ascapă, facă, z-, -s, acumpără, adară, aduńi, afli -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">34</feat><!-- ańi, fudzirâ, va, Nâşi, acăţarâ, adunarâ, alinarâ, alti, arsi, bucăţle -->
+    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,NUM,PRON,VERB">230</feat><!-- era, nă, u, un, casă, feata, fiĉorlu, mi, nâsă, ti -->
+    <feat name="Number[psor]" value="Sing" upos="DET">1</feat><!-- -su -->
+    <feat name="NumForm" value="Word" upos="NUM">6</feat><!-- ună, doľi, nă, treiľi, unsprăyinģiţĺi -->
+    <feat name="NumType" value="Card" upos="NUM">6</feat><!-- ună, doľi, nă, treiľi, unsprăyinģiţĺi -->
+    <feat name="Person" value="1" upos="PRON,VERB">14</feat><!-- mi, io, aduc, aĝut, dipun, escu, fum, ma, mine, vineam -->
+    <feat name="Person" value="2" upos="PRON,VERB">23</feat><!-- ti, tine, adu, aflaşi, afli, agudişi, asuń, aştepţ, bati, dipuńi -->
+    <feat name="Person" value="3" upos="AUX,DET,PRON,VERB">159</feat><!-- s-, era, u, nâsă, si, va, ţi, -ĺi, adară, aestu -->
+    <feat name="Polarity" value="Neg" upos="PART">20</feat><!-- nu, n-, no, no-, nu- -->
+    <feat name="Polarity" value="Pos" upos="CCONJ,SCONJ">32</feat><!-- şi, că, ş-, cara, di, ca, Ma, cum, i, se- -->
+    <feat name="Position" value="Prenom" upos="DET">2</feat><!-- Aestu, alti -->
+    <feat name="Poss" value="Yes" upos="DET">2</feat><!-- -su, a -->
+    <feat name="PronType" value="Dem" upos="DET,PRON">3</feat><!-- aestu, aestă -->
+    <feat name="PronType" value="Ind" upos="DET,PRON">13</feat><!-- un, nă, vârnu, Ună, alti, multu, ndoauă -->
+    <feat name="PronType" value="Int,Rel" upos="ADV,DET,PRON">26</feat><!-- iu, cum, ţe, ţi, cari, -ţe, Cara, câte, ma, ţi- -->
+    <feat name="PronType" value="Neg" upos="ADV">3</feat><!-- niţi, putes, vărnoară -->
+    <feat name="PronType" value="Prs" upos="DET,PRON">61</feat><!-- s-, u, mi, nâsă, si, ti, tine, -ĺi, io, lu -->
+    <feat name="Reflex" value="Yes" upos="PRON">19</feat><!-- s-, si, se-, -s, -ş, se, z- -->
+    <feat name="Strength" value="Strong" upos="PRON">14</feat><!-- nâsă, tine, io, u, Nâs, Nâşi, mine, năs -->
+    <feat name="Strength" value="Weak" upos="PRON">45</feat><!-- s-, mi, si, ti, -ĺi, lu, se-, u, -l, -o -->
+    <feat name="Tense" value="Imp" upos="AUX,VERB">31</feat><!-- era, avea, imna, lucra, Aştipta, afla, arcai, arăţea, aspărea, aĝuca -->
+    <feat name="Tense" value="Past" upos="VERB">29</feat><!-- ascăpă, feaţi, fudzirâ, tricu, Aĝumse, acăţarâ, adunarâ, aduse, aflaşi, agudişi -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">53</feat><!-- adară, ascapă, facă, mutreaşte, acaţă, acumpără, aduc, aduńi, afli, alină -->
+    <feat name="Variant" value="Short" upos="ADP,PART,PRON">41</feat><!-- s-, si, z-, lu, n-, se-, -l, -o, -s, -ş -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">116</feat><!-- era, adară, ascapă, ascăpă, avea, aştipta, facă, feaţi, fudzirâ, imna -->
+    <feat name="VerbForm" value="Part" upos="VERB">5</feat><!-- ascăpată, faptă, minduit, niapirită, nidată -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="32">
+    <dep name="acl">3</dep>
+    <dep name="advcl">29</dep>
+    <dep name="advmod">75</dep>
+    <dep name="amod">7</dep>
+    <dep name="aux">6</dep>
+    <dep name="case">41</dep>
+    <dep name="cc">17</dep>
+    <dep name="ccomp">9</dep>
+    <dep name="ccomp:pmod">2</dep>
+    <dep name="conj">21</dep>
+    <dep name="cop">2</dep>
+    <dep name="csubj">2</dep>
+    <dep name="det">14</dep>
+    <dep name="discourse">1</dep>
+    <dep name="expl">11</dep>
+    <dep name="expl:impers">1</dep>
+    <dep name="expl:poss">1</dep>
+    <dep name="expl:pv">19</dep>
+    <dep name="fixed">2</dep>
+    <dep name="iobj">7</dep>
+    <dep name="mark">45</dep>
+    <dep name="nmod">7</dep>
+    <dep name="nsubj">41</dep>
+    <dep name="nummod">5</dep>
+    <dep name="obj">28</dep>
+    <dep name="obl">25</dep>
+    <dep name="obl:pmod">3</dep>
+    <dep name="parataxis">4</dep>
+    <dep name="punct">89</dep>
+    <dep name="root">50</dep>
+    <dep name="vocative">2</dep>
+    <dep name="xcomp">4</dep>
+  </deps>
+</treebank>
