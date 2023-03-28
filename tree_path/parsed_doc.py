@@ -176,7 +176,11 @@ def iter_docs_from_conll(conll_in : str, doc_id_key : str = _doc_id_key, id_list
             tree_doc = ParsedDoc(sentence.meta_value(doc_id_key))
             if previous_doc and (not id_list or previous_doc.doc_id in id_list):
                 yield previous_doc   
-        sentence_tree = from_conllu(sentence)
+        try:
+            sentence_tree = from_conllu(sentence)
+        except BaseException as e:
+            print("In doc %s, sentence %s: %s" % (tree_doc.doc_id, str(sentence.id) if sentence else 'None', str(e)))
+            continue
         sentence_tree = ParsedSentence(sentence_tree, sentence.id, sentence.text)
         tree_doc.append(sentence_tree)
     # end loop
