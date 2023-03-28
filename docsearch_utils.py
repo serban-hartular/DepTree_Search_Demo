@@ -3,6 +3,8 @@ from __future__ import annotations
 import os
 from typing import List
 
+import stanza as stanza
+
 import tree_path as tp
 from tree_path import ParsedDoc, Search, Match
 import pyperclip
@@ -55,3 +57,4 @@ def load_parsed_docs(dir : str = '', skip = ('cancan2020', 'craii')):
     print('Done loading')
     globals()['all_docs'] = all_docs
     
+from stanza_parse import text_to_parsed_doc, text_file_to_parsed_doc
